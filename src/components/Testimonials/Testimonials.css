@@ -1,0 +1,171 @@
+.testimonials{
+    margin: 80px auto;
+    padding: 0 80px;
+    position: relative;
+}
+.next-btn , .back-btn{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    padding: 15px;
+    width: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    background: #212EA0;
+}
+.back-btn{
+    right: auto;
+    left: 0;
+}
+.slider{
+    overflow: hidden;
+}
+.slider ul{
+    display: flex;
+    width: 200%;
+    overflow-x: hidden;
+    transition: 0.5s;
+    
+}
+.slider ul li{
+    list-style: none;
+    width: 50%;
+    padding: 20px;
+}
+.slide{
+    box-shadow: 0 0 20px rgba(0, 0 ,0 ,0.05);
+    padding: 40px;
+    border-radius: 10px;
+    color: #676767;
+    line-height: 1.4;
+}
+.slide img{
+    width: 65px;
+    border-radius: 50%;
+    margin-right: 10px;
+    border: 4px solid #212EA0;
+}
+.user-info{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: 15px;
+}
+.user-info h3{
+    color: #212EA0;
+}
+
+/* media querry */
+
+/* Existing CSS rules */
+
+.testimonials {
+    margin: 80px auto;
+    padding: 0 80px;
+    position: relative;
+}
+
+.next-btn , .back-btn {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    padding: 15px;
+    width: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    background: #212EA0;
+}
+
+.back-btn {
+    right: auto;
+    left: 0;
+}
+
+.slider {
+    overflow: hidden;
+}
+
+.slider ul {
+    display: flex;
+    width: 200%;
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.slider ul li {
+    list-style: none;
+    width: 50%;
+    padding: 20px;
+}
+
+.slide {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+    padding: 40px;
+    border-radius: 10px;
+    color: #676767;
+    line-height: 1.4;
+}
+
+.slide img {
+    width: 65px;
+    border-radius: 50%;
+    margin-right: 10px;
+    border: 4px solid #212EA0;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: 15px;
+}
+
+.user-info h3 {
+    color: #212EA0;
+}
+
+/* Media Query for Smaller Screens (Mobile/Tablet) */
+/* Media Query for Smaller Screens (Mobile/Tablet) */
+@media (max-width: 768px) {
+    .testimonials {
+        padding: 0 20px;  /* Padding for mobile */
+        margin: 40px auto;
+    }
+
+    .next-btn, .back-btn {
+        width: 40px;      /* Smaller button size for mobile */
+        padding: 10px;
+    }
+
+    .slider ul {
+        width: 300%;  /* Adjust to 300% for mobile to account for 3 slides */
+    }
+
+    .slider ul li {
+        width: 100%;   /* Each slide will take full width on smaller screens */
+        padding: 15px;
+    }
+
+    .slide {
+        padding: 20px; /* Smaller padding inside the slide */
+    }
+
+    .slide img {
+        width: 50px;   /* Adjust image size for mobile */
+    }
+
+    .user-info {
+        font-size: 14px;  /* Smaller text size for user info */
+    }
+
+    .user-info h3 {
+        font-size: 16px;  /* Slightly smaller heading size for mobile */
+    }
+
+    /* Fix the spacing issue between slides when the slider moves */
+    .slider ul {
+        transition: transform 0.5s ease; /* Ensuring smooth slide transition */
+    }
+}

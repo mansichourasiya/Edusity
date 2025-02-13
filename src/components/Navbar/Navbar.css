@@ -1,0 +1,103 @@
+nav{
+    width: 100%;
+    /* background: #333; */
+    color: #fff;
+    padding: 4px 0;
+    position: fixed;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 10;
+}
+.logo{
+    width: 180px;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 5px 20px ;
+    font-size: 16px;
+}
+.dark-nav{
+    background: #212EA0;
+    transition: 0.5s;
+}
+.menu-icon{
+    display: none;
+}
+
+/* media querry */
+
+@media (max-width: 1000px) {
+    .logo {
+        width: 140px;
+    }
+    nav ul li {
+        margin: 10px 15px;
+    }
+}
+
+/* Media query for screens with max width of 840px */
+@media (max-width: 840px) {
+    nav {
+        padding: 15px 0;
+    }
+
+    nav ul {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background: #212EA0;
+        width: 200px;
+        margin-top: 70px;
+        transition: 0.5s;
+        transform: translateX(100%); /* Initially hidden */
+        z-index: -1; /* Hidden by default */
+    }
+
+    nav ul.show {
+        transform: translateX(0); /* Show menu when 'show' class is added */
+        z-index: 10; /* Make sure the menu appears on top */
+    }
+
+    nav ul li {
+        display: block;
+        margin: 20px 40px;
+    }
+
+    .menu-icon {
+        display: block;
+        width: 30px;
+        cursor: pointer;
+    }
+}
+
+/* Media query for screens with max width of 480px */
+@media (max-width: 480px) {
+    nav {
+        padding: 10px 0;
+    }
+
+    .logo {
+        width: 120px;
+    }
+
+    nav ul {
+        width: 100%;
+        top: 0;
+        left: 0;
+        margin-top: 50px;
+    }
+
+    nav ul li {
+        font-size: 14px;
+        margin: 15px 0;
+    }
+
+    .menu-icon {
+        width: 25px;
+    }
+}
